@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="normal/base::layout(~{::section})">
+<head>
+	<meta charset="UTF-8" />
+	<title>User Dashboard</title>
+</head>
+<body>
+	<section>
+		<div class="container-fluid">
+			<div class="card">
+				<div class="card-body">
+					<div class="container text-center">
+						<img class="my_profile_picture mt-4" style="height: 200px; width: 200px; border: none;" th:src="@{'/img/dashboard.png'}" src="" alt="profile photo" />
+
+					</div>
+					<h1 class="text-center mt-3 text-secondary font-italic"> Welcome to Ezy Contacts</h1>
+					<h2 class="text-center mt-3 text-secondary font-italic font-weight-light"> A place where you contacts last forever... Start adding your contacts now</h2>
+					<a th:href="@{/user/add-contact}" class="btn btn-primary mt-4 btn-block text-uppercase">Add Contact</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+</body>
+</html>
